@@ -12,7 +12,7 @@
                     </div>
                 </div>
             </div>
-            <div class="navigation__right">
+            <!--<div class="navigation__right">
                 <menu-default />
                 <ul class="navigation__extra">
                     <li>
@@ -25,14 +25,8 @@
                             {{ $t('header.navigationExtra.trackYourOrder') }}
                         </nuxt-link>
                     </li>
-                    <li>
-                        <CurrencyDropdown />
-                    </li>
-                    <li>
-                        <LanguageSwicher />
-                    </li>
                 </ul>
-            </div>
+            </div>-->
         </div>
     </nav>
 </template>

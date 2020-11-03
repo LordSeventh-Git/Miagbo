@@ -249,6 +249,9 @@
         i {
             font-size: 30px;
             line-height: 1em;
+            &:hover{
+                color: yellow;
+            }
         }
     }
 
@@ -256,12 +259,12 @@
         padding-left: 10px;
 
         a {
-            display: block;
+            display:inline-block;
             font-weight: 700;
-            line-height: 18px;
+            line-height: 50px;
 
             &:hover {
-                color: #ffffff;
+                color: yellow;
             }
         }
     }

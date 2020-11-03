@@ -5,6 +5,7 @@
                 <div class="header__left">
                     <nuxt-link to="/" class="ps-logo">
                         <img src="/img/logo_miagbo.png" alt="miagbo" style="height:70px;width:70px;"/>
+                        <span id="logo_font">Miagbo</span>
                     </nuxt-link>
                     <div class="menu--product-categories">
                         <div class="menu__toggle">
@@ -53,6 +54,13 @@ export default {
     .header__top {
         background-color: $color-1st;
     }
+}
+@font-face {
+    font-family: "Ghoust Solid";
+    src: url("/assets/scss/modules/Ghoust_Solid.otf") format("otf");
+}
+#logo_font{
+    font-family: "Ghoust Solid";
 }
 </style>
 `

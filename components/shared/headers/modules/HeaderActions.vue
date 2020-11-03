@@ -6,7 +6,7 @@
                 <span>
                     <i>{{ compareTotal ? compareTotal : 0 }}</i>
                 </span>
-            </a>
+            </a>        
         </nuxt-link>
         <nuxt-link to="/account/wishlist">
             <a class="header__extra">

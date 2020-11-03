@@ -1,3 +1,8 @@
+@font-face {
+    font-family: "Ghoust Solid";
+    src: url("/static/fonts/Ghoust_Solid.otf") format("otf");
+}
+
 .navigation {
     background-color: $color-1st;
 
@@ -73,7 +78,7 @@
 
         > i {
             font-size: 30px;
-            line-height: 42px;
+            line-height: 42px;            
         }
 
         span {
@@ -88,7 +93,7 @@
             width: 20px;
             height: 20px;
             color: #ffffff;
-            background-color: #000000;
+            background-color:red;
             border-radius: 50%;
 
             i {
@@ -101,7 +106,7 @@
 
         &:hover {
             i {
-                color: #ffffff;
+                color: yellow;
             }
         }
     }
@@ -110,28 +115,49 @@
         display: flex;
         align-items: center;
         justify-content: flex-end;
+        transition: 5s;
+        margin-top: -15px;
+        margin-left: 5px;
 
         > * {
-            margin: 0 20px;
+            margin: 0 12px;
         }
     }
 
     .header__left {
-        margin-top: auto;
+        margin-top: -20px;
         max-width: 200px;
         display: flex;
         align-items: center;
+        font-style: italic;
+        font-size: 2em;
+        //font-family: "Ghoust Solid";
+        
+        &:hover{
+            color: yellow;
+        }
 
         .menu--product-categories {
             display: none;
         }
+
+        img{
+            transition: .5s;
+
+            &:hover{
+                box-shadow: 0 2px 5px rgba(0,0,0,0.3);
+                border-radius: 50px;
+            }
+        }
+
     }
 
     .header__center {
+        margin-top: -10px;
     }
 
     .header__right {
-        max-width: 370px;
+        max-width: 280px;
     }
 
     .header__top {
@@ -175,6 +201,7 @@
         .header__left {
             .ps-logo {
                 display: none;
+
             }
 
             .menu--product-categories {

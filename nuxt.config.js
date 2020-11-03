@@ -30,7 +30,8 @@ export default {
         '~/static/fonts/Linearicons/Font/demo-files/demo.css',
         '~/static/fonts/font-awesome/css/font-awesome.css',
         '~/static/css/bootstrap.min.css',
-        '~/assets/scss/style.scss'
+        '~/assets/scss/style.scss',
+        '~/static/css/fontawesome.css',
     ],
 
     plugins: [
