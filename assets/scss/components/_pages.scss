@@ -15,12 +15,11 @@
                 width: 100%;
             }
 
-            .ps-section__left {
-                padding-right: 30px;
+            /*    padding-right: 30px;
                 max-width: calc(100% - 390px);
-            }
+            }*/
 
-            .ps-section__right {
+            /*.ps-section__right {
                 max-width: 390px;
 
                 .ps-collection {
@@ -31,7 +30,7 @@
                         margin-bottom: 0;
                     }
                 }
-            }
+            }*/
 
             @include media('<lg') {
                 display: block;
@@ -41,7 +40,7 @@
                     padding-right: 0;
                 }
 
-                .ps-section__right {
+                /*.ps-section__right {
                     display: flex;
                     flex-flow: row nowrap;
                     margin: 0;
@@ -61,7 +60,7 @@
                             padding-right: 0;
                         }
                     }
-                }
+                }*/
             }
         }
     }

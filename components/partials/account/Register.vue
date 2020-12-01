@@ -1,13 +1,13 @@
 <template lang="html">
     <form>
         <div class="ps-form__content">
-            <h5>Register An Account</h5>
+            <h5>Créer un compte</h5>
             <div class="form-group">
                 <v-text-field
                     v-model="username"
                     :error-messages="usernameErrors"
                     @input="$v.username.$touch()"
-                    placeholder="Email Address"
+                    placeholder="Nom d'utilisateur ou e-mail"
                     class="ps-text-field"
                     outlined
                     height="50"
@@ -18,7 +18,7 @@
                     v-model="password"
                     :error-messages="passwordErrors"
                     @input="$v.password.$touch()"
-                    placeholder="Password"
+                    placeholder="Mot de passe"
                     class="ps-text-field"
                     outlined
                     height="50"
@@ -26,15 +26,16 @@
             </div>
             <div class="form-group submit">
                 <button
+                    style="padding: 10px;"
                     type="submit"
                     class="ps-btn ps-btn--fullwidth"
                     @click.prevent="handleSubmit"
                 >
-                    Register
+                    S'inscrire
                 </button>
             </div>
         </div>
-        <div class="ps-form__footer">
+        <!--<div class="ps-form__footer">
             <p>Connect with:</p>
 
             <ul class="ps-list--social">
@@ -59,7 +60,7 @@
                     </a>
                 </li>
             </ul>
-        </div>
+        </div>-->
     </form>
 </template>
 

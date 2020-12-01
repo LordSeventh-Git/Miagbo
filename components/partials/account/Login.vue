@@ -1,14 +1,14 @@
 <template lang="html">
     <form>
         <div class="ps-form__content">
-            <h5>Log In Your Account</h5>
+            <h5>Connectez-vous à votre compte</h5>
             <div class="form-group">
                 <v-text-field
                     v-model="username"
                     class="ps-text-field"
                     :error-messages="usernameErrors"
                     @input="$v.username.$touch()"
-                    placeholder="Usernamer or email"
+                    placeholder="Nom d'utilisateur ou e-mail"
                     height="50"
                     outlined
                 />
@@ -20,26 +20,27 @@
                     class="ps-text-field"
                     :error-messages="passwordErrors"
                     @input="$v.password.$touch()"
-                    placeholder="Please enter password"
+                    placeholder="Mot de passe"
                     height="50"
                     outlined
                 />
             </div>
             <div class="form-group">
-                <v-checkbox label="Remember me" color="warning" />
+                <v-checkbox label="Se souvenir de moi" color="warning" />
             </div>
             <div class="form-group submit">
                 <button
+                    style="padding: 10px"
                     type="submit"
                     class="ps-btn ps-btn--fullwidth"
                     @click.prevent="handleSubmit"
                 >
-                    Login
+                    S'identifier
                 </button>
             </div>
         </div>
-        <div class="ps-form__footer">
-            <p>Connect with:</p>
+        <!--<div class="ps-form__footer">
+            <p>Se connecter avec : </p>
             <ul class="ps-list--social">
                 <li>
                     <a href="#" class="facebook">
@@ -62,7 +63,7 @@
                     </a>
                 </li>
             </ul>
-        </div>
+        </div>-->
     </form>
 </template>
 

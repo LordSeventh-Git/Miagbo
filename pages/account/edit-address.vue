@@ -23,7 +23,7 @@ import HeaderMobile from '~/components/shared/mobile/HeaderMobile';
 
 export default {
     transition: 'zoom',
-    middleware: 'authentication',
+    /*middleware: 'authentication',*/
     components: {
         HeaderMobile,
         EditAddress,
@@ -36,11 +36,11 @@ export default {
         return {
             breadCrumb: [
                 {
-                    text: 'Home',
+                    text: 'Accueil',
                     url: '/'
                 },
                 {
-                    text: 'Edit Address'
+                    text: 'Modifier l\'adresse'
                 }
             ]
         };

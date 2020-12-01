@@ -31,16 +31,16 @@ export default {
         BreadCrumb
     },
     transition: 'zoom',
-    middleware: 'authentication',
+    /*middleware: 'authentication',*/
     data: () => {
         return {
             breadCrumb: [
                 {
-                    text: 'Home',
+                    text: 'Accueil',
                     url: '/'
                 },
                 {
-                    text: 'Addresses'
+                    text: 'Adresses'
                 }
             ]
         };

@@ -1,11 +1,11 @@
 <template lang="html">
     <div class="ps-form__orders ps-block--checkout-order">
-        <h3 v-if="shipping === false">Your Order</h3>
+        <h3 v-if="shipping === false">Votre commande</h3>
         <div class="ps-block--checkout-order">
             <div class="ps-block__content">
                 <figure>
                     <figcaption>
-                        <strong>Product</strong>
+                        <strong>Produits</strong>
                         <strong>total</strong>
                     </figcaption>
                 </figure>
@@ -25,19 +25,19 @@
                 </figure>
                 <figure>
                     <figcaption>
-                        <strong>Subtotal</strong>
-                        <small>$ {{ amount }}</small>
+                        <strong>Sous-total</strong>
+                        <small>{{ amount }} FCFA</small>
                     </figcaption>
                 </figure>
                 <figure v-if="shipping === true">
                     <figcaption>
-                        <strong>Shipping</strong>
+                        <strong>Livraison</strong>
                         <small>$ 20.00</small>
                     </figcaption>
                 </figure>
                 <figure v-else class="ps-block__shipping">
-                    <h3>Shipping</h3>
-                    <p>Calculated at next step</p>
+                    <h3>Livraison</h3>
+                    <p>Calculé à l'étape suivante</p>
                 </figure>
             </div>
         </div>

@@ -1,12 +1,12 @@
 <template lang="html">
     <div class="ps-form__billing-info">
         <h3 class="ps-form__heading">
-            Contact information
+            Informations de contact
         </h3>
         <div class="form-group">
-            <label>Email or phone number <sup>*</sup></label>
+            <label>E-mail ou numéro de téléphone <sup>*</sup></label>
             <v-text-field
-                placeholder="Email or phone number"
+                placeholder="E-mail ou numéro de téléphone"
                 outlined
                 height="50"
             />
@@ -14,18 +14,18 @@
         <div class="form-group">
             <v-checkbox
                 color="success"
-                label="Keep me up to date on news and exclusive offers?"
+                label="Me tenir informé des offres exclusives ?"
             />
         </div>
         <h3 class="ps-form__heading">
-            Shipping address
+            Adresse de livraison
         </h3>
         <div class="row">
             <div class="col-sm-6">
                 <div class="form-group">
-                    <label>First Name </label>
+                    <label>Prénoms</label>
                     <v-text-field
-                        placeholder="First Name"
+                        placeholder="Prénoms"
                         outlined
                         height="50"
                     />
@@ -33,9 +33,9 @@
             </div>
             <div class="col-sm-6">
                 <div class="form-group">
-                    <label>Last Name </label>
+                    <label>Nom</label>
                     <v-text-field
-                        placeholder="Last Name"
+                        placeholder="Nom"
                         outlined
                         height="50"
                     />
@@ -43,13 +43,13 @@
             </div>
         </div>
         <div class="form-group">
-            <label>Address</label>
-            <v-text-field placeholder="Address" outlined height="50" />
+            <label>Adresse</label>
+            <v-text-field placeholder="Adresse" outlined height="50" />
         </div>
         <div class="form-group">
-            <label>Apartment</label>
+            <label>Appartement</label>
             <v-text-field
-                placeholder="Apartment, suite, etc. (optional)"
+                placeholder="Appartement, suite, etc. (optionnel)"
                 outlined
                 height="50"
             />
@@ -57,15 +57,15 @@
         <div class="row">
             <div class="col-sm-6">
                 <div class="form-group">
-                    <label>City</label>
-                    <v-text-field placeholder="City" outlined height="50" />
+                    <label>Ville</label>
+                    <v-text-field placeholder="Ville" outlined height="50" />
                 </div>
             </div>
             <div class="col-sm-6">
                 <div class="form-group">
-                    <label>Postcode</label>
+                    <label>Code postal</label>
                     <v-text-field
-                        placeholder="Postal Code"
+                        placeholder="Code postal"
                         outlined
                         height="50"
                     />
@@ -75,17 +75,17 @@
         <div class="form-group">
             <v-checkbox
                 color="success"
-                label="Save this information for next time"
+                label="Enregistrez ces informations pour la prochaine fois"
             />
         </div>
         <div class="ps-form__submit">
             <nuxt-link to="/account/shopping-cart">
                 <i class="icon-arrow-left mr-1"></i>
-                Return to shopping cart
+                Retourner au panier
             </nuxt-link>
             <div class="ps-block__footer">
-                <button class="ps-btn" @click="handleToShipping">
-                    Continue to shipping
+                <button class="ps-btn" @click="handleToShipping" style="padding: 10px;">
+                    Continuer à expédier
                 </button>
             </div>
         </div>

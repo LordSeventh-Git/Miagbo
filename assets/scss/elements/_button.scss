@@ -80,7 +80,6 @@ button {
 .ps-btn,
 button.ps-btn {
     display: inline-block;
-    padding: 15px 45px;
     font-size: 16px;
     font-weight: 600;
     line-height: 20px;
@@ -168,8 +167,10 @@ button.ps-btn {
 
     &:hover,
     &:active {
-        background-color: #222;
-        color: #fff;
+        //background-color: #222;
+        //color: #fff;
+        background-color: #00c835;
+        color: yellow;
 
         &.ps-btn--black {
             background-color: $color-1st;

@@ -139,12 +139,12 @@
 }
 
 .ps-newsletter {
-    padding: 65px 0;
+    padding: 20px 0;
     border-top: 1px solid #e1e1e1;
     border-bottom: 1px solid #e1e1e1;
-    @include media('<sm') {
+    /*@include media('<sm') {
         padding: 50px 0;
-    }
+    }*/
 }
 
 .ps-product-list {

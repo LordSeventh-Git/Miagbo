@@ -22,7 +22,7 @@ import Checkout from '~/components/partials/account/Checkout';
 import HeaderMobile from '~/components/shared/mobile/HeaderMobile';
 
 export default {
-    middleware: 'authentication',
+    /*middleware: 'authentication',*/
     components: {
         HeaderMobile,
         Checkout,
@@ -37,15 +37,15 @@ export default {
         return {
             breadCrumb: [
                 {
-                    text: 'Home',
+                    text: 'Accueil',
                     url: '/'
                 },
                 {
-                    text: 'Shopping Cart',
+                    text: 'Panier',
                     url: '/account/shopping-cart'
                 },
                 {
-                    text: 'Checkout Information'
+                    text: 'Informations de paiement'
                 }
             ]
         };

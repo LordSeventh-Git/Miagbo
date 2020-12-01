@@ -9,11 +9,10 @@
                                 <nuxt-link to="/shop">
                                     <a>
                                         <img
-                                            src="@/static/images/slider-2-1.jpeg"
+                                            src="@/static/img/barriere_miagbo_dec.jpg"
                                             alt="martfury"
-                                            width="1230px"
-                                            height="700px"
-                                        />
+                                            width="1500px"
+                                            height="500px"                                        />
                                     </a>
                                 </nuxt-link>
                             </div>
@@ -25,8 +24,8 @@
                                         <img
                                             src="@/static/images/slider-2-2.jpeg"
                                             alt="martfury"
-                                            width="1230px"
-                                            height="700px"
+                                            width="1500px"
+                                            height="500px"
                                         />
                                     </a>
                                 </nuxt-link>
@@ -39,8 +38,8 @@
                                         <img
                                             src="@/static/images/slider-2-3.jpeg"
                                             alt="martfury"
-                                            width="1230px"
-                                            height="700px"
+                                            width="1500px"
+                                            height="500px"
                                         />
                                     </a>
                                 </nuxt-link>
@@ -53,8 +52,8 @@
                                         <img
                                             src="@/static/images/slider-2-4.jpeg"
                                             alt="martfury"
-                                            width="1230px"
-                                            height="700px"                                            
+                                            width="1500px"
+                                            height="500px"                                            
                                         />
                                     </a>
                                 </nuxt-link>
@@ -64,18 +63,18 @@
                     <!--Carousel controls-->
                     <div class="swiper-nav">
                         <span class="swiper-arrow swiper-prev"
-                            ><i class="icon-chevron-left"></i
+                            ><i class="fa fa-arrow-left"></i
                         ></span>
                         <div class="swiper-arrow swiper-next">
-                            <i class="icon-chevron-right"></i>
+                            <i class="fa fa-arrow-right"></i>
                         </div>
                     </div>
-                    <div
+                    <!--<div
                         class="swiper-pagination swiper-pagination-bullets"
-                    ></div>
+                    ></div>-->
                 </div>
             </div>
-            <div class="ps-section__right">
+            <!--<div class="ps-section__right">
                 <nuxt-link to="/shop" class="ps-collection">
                     <img
                         src="@/static/images/slider-1.jpeg"
@@ -88,7 +87,7 @@
                         alt="martfury"
                     />
                 </nuxt-link>
-            </div>
+            </div>-->
         </div>
     </div>
 </template>
@@ -118,4 +117,10 @@ export default {
 };
 </script>
 
-<style lang="scss" scoped></style>
+<style lang="scss" scoped>
+.ps-carousel{
+    border: 4px solid green;
+    border-radius: 20px;
+    box-shadow: 6px 6px 30px grey;
+}
+</style>

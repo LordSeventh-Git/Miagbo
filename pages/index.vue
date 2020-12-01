@@ -3,12 +3,13 @@
         <v-main>
             <header-default />
             <header-mobile />
+            <Categories />
             <main id="homepage-1">
                 <home-banner />
-                <home-default-deal-of-day
+                <!--<home-default-deal-of-day
                     v-if="collections !== null"
                     collection-slug="deal-of-the-day"
-                />
+                />-->
                 <!--<home-ads-columns />-->
                 <produits />
                 <home-default-top-categories />
@@ -52,6 +53,7 @@ import HeaderMobile from '~/components/shared/mobile/HeaderMobile';
 import MobileDrawer from '~/components/shared/mobile/MobileDrawer';
 import HomeDefaultDealOfDay from '~/components/partials/homepage/default/HomeDefaultDealOfDay';
 import DemoPanel from '~/components/shared/DemoPanel';
+import Categories from '~/components/Categories';
 
 export default {
     components: {
@@ -73,7 +75,8 @@ export default {
         HomeDefaultTopCategories,
         Clothings,
         ConumerElectronics,
-        Produits
+        Produits, 
+        Categories
     },
 
     transition: 'zoom',

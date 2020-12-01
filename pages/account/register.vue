@@ -11,12 +11,12 @@
                             <ul class="ps-tab-list">
                                 <li>
                                     <nuxt-link to="/account/login">
-                                        Login
+                                        Connexion
                                     </nuxt-link>
                                 </li>
                                 <li class="active">
                                     <nuxt-link to="/account/register">
-                                        Register
+                                        Inscription
                                     </nuxt-link>
                                 </li>
                             </ul>
@@ -28,7 +28,7 @@
                 </div>
             </section>
             <newsletters />
-            <footer-default />
+            <footer-fullwidth />
         </v-main>
     </v-app>
 </template>
@@ -36,7 +36,7 @@
 <script>
 import BreadCrumb from '~/components/elements/BreadCrumb';
 import HeaderDefault from '~/components/shared/headers/HeaderDefault';
-import FooterDefault from '~/components/shared/footers/FooterDefault';
+import FooterFullwidth from '~/components/shared/footers/FooterFullwidth';
 import Newsletters from '~/components/partials/commons/Newsletters';
 import Login from '~/components/partials/account/Login';
 import Register from '~/components/partials/account/Register';
@@ -49,7 +49,7 @@ export default {
         Register,
         Login,
         Newsletters,
-        FooterDefault,
+        FooterFullwidth,
         HeaderDefault,
         BreadCrumb
     },
@@ -57,11 +57,11 @@ export default {
         return {
             breadCrumb: [
                 {
-                    text: 'Home',
+                    text: 'Accueil',
                     url: '/'
                 },
                 {
-                    text: 'Register'
+                    text: 'Inscription'
                 }
             ]
         };
@@ -72,5 +72,7 @@ export default {
 <style lang="scss" scoped>
 .ps-tab-list {
     padding-left: 0;
+    display: flex;
+    justify-content: center;
 }
 </style>

@@ -1,7 +1,7 @@
 <template lang="html">
     <nav class="navigation">
         <div class="ps-container">
-            <div class="">
+            <!--<div class="">
                 <div class="menu--product-categories">
                     <div class="menu__toggle">
                         <i class="icon-menu"></i>
@@ -11,7 +11,7 @@
                         <menu-categories />
                     </div>
                 </div>
-            </div>
+            </div>-->
             <!--<div class="navigation__right">
                 <menu-default />
                 <ul class="navigation__extra">

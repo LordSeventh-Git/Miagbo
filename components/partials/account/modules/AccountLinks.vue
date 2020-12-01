@@ -11,7 +11,7 @@
         <li>
             <nuxt-link to="/account/my-account">
                 <a>
-                    <i class="icon-power-switch"></i>
+                    <i class="icon-power-switch" style="margin-left: -20px; margin-right: 10px;"></i>
                     Logout
                 </a>
             </nuxt-link>

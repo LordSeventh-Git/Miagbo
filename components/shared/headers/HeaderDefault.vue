@@ -7,7 +7,7 @@
                         <img src="/img/logo_miagbo.png" alt="miagbo" style="height:70px;width:70px;"/>
                         <span id="logo_font">Miagbo</span>
                     </nuxt-link>
-                    <div class="menu--product-categories">
+                    <!--<div class="menu--product-categories">
                         <div class="menu__toggle">
                             <i class="icon-menu"></i>
                             <span> {{ $t('header.shopByDepartment') }} </span>
@@ -15,7 +15,7 @@
                         <div class="menu__content">
                             <menu-categories />
                         </div>
-                    </div>
+                    </div>-->
                 </div>
                 <div class="header__center">
                     <search-header />
@@ -25,21 +25,18 @@
                 </div>
             </div>
         </div>
-        <navigation-default />
     </header>
 </template>
 
 <script>
 import SearchHeader from './modules/SearchHeader';
 import HeaderActions from './modules/HeaderActions';
-import NavigationDefault from './modules/NavigationDefault';
 import MenuCategories from '~/components/shared/menu/MenuCategories';
 import { stickyHeader } from '~/utilities/common-helpers';
 export default {
     name: 'HeaderDefault',
     components: {
         MenuCategories,
-        NavigationDefault,
         HeaderActions,
         SearchHeader
     },
@@ -61,6 +58,8 @@ export default {
 }
 #logo_font{
     font-family: "Ghoust Solid";
+    font-style: normal;
+    font-size: 1.4em;
 }
 </style>
 `

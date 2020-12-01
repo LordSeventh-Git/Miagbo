@@ -37,7 +37,7 @@ export default {
         return {
             accountLinks: [
                 {
-                    text: 'Account Information',
+                    text: 'Informations sur votre compte',
                     url: '/account/user-information',
                     icon: 'icon-user'
                 },
@@ -47,23 +47,23 @@ export default {
                     icon: 'icon-alarm-ringing'
                 },
                 {
-                    text: 'Invoices',
+                    text: 'Factures',
                     url: '/account/invoices',
                     icon: 'icon-papers'
                 },
                 {
-                    text: 'Address',
+                    text: 'Adresses',
                     url: '/account/addresses',
                     icon: 'icon-map-marker',
                     active: true
                 },
                 {
-                    text: 'Recent Viewed Product',
+                    text: 'Produits récemment consultés',
                     url: '/account/recent-viewed-product',
                     icon: 'icon-store'
                 },
                 {
-                    text: 'Wishlist',
+                    text: 'Liste de souhaits',
                     url: '/account/wishlist',
                     icon: 'icon-heart'
                 }

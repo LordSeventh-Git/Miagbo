@@ -22,7 +22,7 @@
                     <div class="ps-page__content">
                         <div class="ps-section--account-setting">
                             <div class="ps-section__header">
-                                <h3>Invoices</h3>
+                                <h3>Factures</h3>
                             </div>
                             <div class="ps-section__content">
                                 <TableInvoices />
@@ -45,7 +45,7 @@ export default {
         return {
             accountLinks: [
                 {
-                    text: 'Account Information',
+                    text: 'Informations sur votre compte',
                     url: '/account/user-information',
                     icon: 'icon-user'
                 },
@@ -55,23 +55,23 @@ export default {
                     icon: 'icon-alarm-ringing'
                 },
                 {
-                    text: 'Invoices',
+                    text: 'Factures',
                     url: '/account/invoices',
                     icon: 'icon-papers',
                     active: true
                 },
                 {
-                    text: 'Address',
+                    text: 'Adresses',
                     url: '/account/addresses',
-                    icon: 'icon-map-marker'
+                    icon: 'icon-map-marker',
                 },
                 {
-                    text: 'Recent Viewed Product',
+                    text: 'Produits récemment consultés',
                     url: '/account/recent-viewed-product',
                     icon: 'icon-store'
                 },
                 {
-                    text: 'Wishlist',
+                    text: 'Liste de souhaits',
                     url: '/account/wishlist',
                     icon: 'icon-heart'
                 }

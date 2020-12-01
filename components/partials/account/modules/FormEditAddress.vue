@@ -1,45 +1,46 @@
 <template lang="html">
     <form class="ps-form--edit-address">
         <div class="ps-form__header">
-            <h3>Billing address</h3>
+            <!--<h3>Billing address</h3>-->
+            <h3>Informations de paiement</h3>
         </div>
         <div class="ps-form__content">
             <div class="form-group">
-                <label> FirstName <sup>*</sup> </label>
+                <label> Prénoms <sup>*</sup> </label>
                 <input type="text" placeholder="" class="form-control" />
             </div>
             <div class="form-group">
-                <label> Lastname <sup>*</sup> </label>
+                <label> Nom <sup>*</sup> </label>
                 <input type="text" placeholder="" class="form-control" />
             </div>
             <div class="form-group">
                 <label>
-                    Company Name
+                    Nom de la compagnie
                 </label>
                 <input type="text" placeholder="" class="form-control" />
             </div>
             <div class="form-group">
-                <label> Country <sup>*</sup> </label>
+                <label> Pays <sup>*</sup> </label>
                 <input type="text" placeholder="" class="form-control" />
             </div>
             <div class="form-group">
-                <label> Street Address <sup>*</sup> </label>
+                <label> Adresse de la Rue <sup>*</sup> </label>
                 <input type="text" placeholder="" class="form-control" />
             </div>
             <div class="form-group">
-                <label> State <sup>*</sup> </label>
+                <label> Etat <sup>*</sup> </label>
                 <input type="text" placeholder="" class="form-control" />
             </div>
             <div class="form-group">
-                <label> Postcode <sup>*</sup> </label>
+                <label> Code Postale <sup>*</sup> </label>
                 <input type="text" placeholder="" class="form-control" />
             </div>
             <div class="form-group">
-                <label> Email address <sup>*</sup> </label>
+                <label> Adresse E-mail <sup>*</sup> </label>
                 <input type="text" placeholder="" class="form-control" />
             </div>
             <div class="form-group submit">
-                <button class="ps-btn">Save Address</button>
+                <button class="ps-btn" style="padding: 10px; margin-bottom: 0;">Enregistrer</button>
             </div>
         </div>
     </form>

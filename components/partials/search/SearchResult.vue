@@ -5,7 +5,7 @@
                 <strong class="mr-2">{{
                     searchResults !== null ? searchResults.length : 0
                 }}</strong>
-                Product(s) found
+                Produit(s) non trouvés 
             </p>
         </div>
         <div class="ps-shopping__content">
@@ -22,7 +22,7 @@
                 <div class="ps-shopping__footer text-center pt-40"></div>
             </template>
             <template v-else>
-                <span>No Record.</span>
+                <span>Aucun enregistrement.</span>
             </template>
         </div>
     </div>

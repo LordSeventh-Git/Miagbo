@@ -2,7 +2,7 @@
     <div class="ps-section--shopping ps-whishlist">
         <div class="container">
             <div class="ps-section__header">
-                <h1>Wishlist</h1>
+                <h1>Liste de souhaits</h1>
             </div>
             <div class="ps-section__content">
                 <div class="table-responsive">
@@ -10,9 +10,9 @@
                         <thead>
                             <tr>
                                 <th></th>
-                                <th>Product name</th>
-                                <th>Unit Price</th>
-                                <th>Vendor</th>
+                                <th>Produit</th>
+                                <th>Prix unitaire</th>
+                                <th>Vendeur</th>
                                 <th></th>
                             </tr>
                         </thead>
@@ -48,7 +48,7 @@
                                             handleAddToCart(product)
                                         "
                                     >
-                                        Add to cart
+                                        Ajouter au panier
                                     </a>
                                 </td>
                             </tr>

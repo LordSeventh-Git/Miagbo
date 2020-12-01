@@ -39,33 +39,33 @@ export default {
         return {
             accountLinks: [
                 {
-                    text: 'Account Information',
+                    text: 'Informations sur votre compte',
                     url: '/account/user-information',
-                    icon: 'icon-user'
+                    icon: 'icon-user',
+                    active: true
                 },
                 {
                     text: 'Notifications',
                     url: '/account/notifications',
-                    icon: 'icon-alarm-ringing'
+                    icon: 'icon-alarm-ringing',
                 },
                 {
-                    text: 'Invoices',
+                    text: 'Factures',
                     url: '/account/invoices',
                     icon: 'icon-papers'
                 },
                 {
-                    text: 'Address',
+                    text: 'Adresses',
                     url: '/account/addresses',
-                    icon: 'icon-map-marker'
+                    icon: 'icon-map-marker',
                 },
                 {
-                    text: 'Recent Viewed Product',
+                    text: 'Produits récemment consultés',
                     url: '/account/recent-viewed-product',
-                    icon: 'icon-store',
-                    active: true
+                    icon: 'icon-store'
                 },
                 {
-                    text: 'Wishlist',
+                    text: 'Liste de souhaits',
                     url: '/account/wishlist',
                     icon: 'icon-heart'
                 }

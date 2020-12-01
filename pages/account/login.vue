@@ -11,12 +11,12 @@
                             <ul class="ps-tab-list">
                                 <li class="active">
                                     <nuxt-link to="/account/login">
-                                        Login
+                                       Connexion                         
                                     </nuxt-link>
                                 </li>
                                 <li>
-                                    <nuxt-link to="/account/register">
-                                        Register
+                                    <nuxt-link to="/account/register">                                        
+                                        Inscription
                                     </nuxt-link>
                                 </li>
                             </ul>
@@ -28,7 +28,7 @@
                 </div>
             </section>
             <newsletters />
-            <footer-default />
+            <footer-fullwidth />
         </v-main>
     </v-app>
 </template>
@@ -36,7 +36,7 @@
 <script>
 import BreadCrumb from '~/components/elements/BreadCrumb';
 import HeaderDefault from '~/components/shared/headers/HeaderDefault';
-import FooterDefault from '~/components/shared/footers/FooterDefault';
+import FooterFullwidth from '~/components/shared/footers/FooterFullwidth';
 import Newsletters from '~/components/partials/commons/Newsletters';
 import Login from '~/components/partials/account/Login';
 import HeaderMobile from '~/components/shared/mobile/HeaderMobile';
@@ -46,7 +46,7 @@ export default {
         HeaderMobile,
         Login,
         Newsletters,
-        FooterDefault,
+        FooterFullwidth,
         HeaderDefault,
         BreadCrumb
     },
@@ -55,11 +55,11 @@ export default {
         return {
             breadCrumb: [
                 {
-                    text: 'Home',
+                    text: 'Accueil',
                     url: '/'
                 },
                 {
-                    text: 'Login'
+                    text: 'Connexion'
                 }
             ]
         };
@@ -70,5 +70,7 @@ export default {
 <style lang="scss" scoped>
 .ps-tab-list {
     padding-left: 0;
+    display: flex;
+    justify-content: center;
 }
 </style>

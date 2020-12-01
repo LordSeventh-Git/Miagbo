@@ -2,7 +2,7 @@
     "header": {
         "shopByDepartment": "Boutique par Département",
         "wellcomeText": "Bienvenue sur Miagbo votre application de vente en Ligne !",
-        "login": "Se connecter",
+        "login": "Connexion",
         "register": "S'inscrire",
         "navigationExtra": {
             "sellOnMartfury": "Vendre sur Miagbo",
@@ -16,7 +16,7 @@
         }
     },
     "footer": {
-        "copyright": "&copy; 2020 Martfury. Tous Droits Réservés",
+        "copyright": "&copy; 2020 Miagbo. Tous Droits Réservés",
         "widgetHeading": {
             "quickLink": "Liens rapides",
             "company": "Société",
@@ -183,7 +183,7 @@
         },
         "newsLetter": {
             "heading": "Newsletter",
-            "content": "Subcribe pour obtenir des informations sur les produits et les coupons"
+            "content": "Souscrivez pour obtenir des informations sur les produits et les promotions"
         }
     },
     "homeDefault": {

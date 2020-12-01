@@ -60,7 +60,7 @@ export default {
             { code: 'fr', file: 'fr.json' }
         ],
         lazy: true,
-        defaultLocale: 'en',
+        defaultLocale: 'fr',
         langDir: 'lang/locales/'
     },
 

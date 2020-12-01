@@ -3,9 +3,9 @@
         <table class="table table-bordered">
             <thead>
                 <tr>
-                    <th>Id</th>
-                    <th>Title</th>
-                    <th>Status</th>
+                    <th>Message</th>
+                    <th>Date</th>
+                    <th>Statut</th>
                 </tr>
             </thead>
             <tbody>

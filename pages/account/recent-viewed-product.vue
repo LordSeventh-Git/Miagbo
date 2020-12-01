@@ -22,7 +22,7 @@ import HeaderMobile from '~/components/shared/mobile/HeaderMobile';
 
 export default {
     transition: 'zoom',
-    middleware: 'authentication',
+    /*middleware: 'authentication',*/
     components: {
         HeaderMobile,
         RecentViewedProducts,
@@ -39,7 +39,7 @@ export default {
                     url: '/'
                 },
                 {
-                    text: 'Recent Viewed Products'
+                    text: 'Produits récemments Consultés'
                 }
             ]
         };

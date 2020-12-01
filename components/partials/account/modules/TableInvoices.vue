@@ -4,10 +4,10 @@
             <thead>
                 <tr>
                     <th>Id</th>
-                    <th>Title</th>
+                    <th>Désignation</th>
                     <th>Date</th>
-                    <th>Amount</th>
-                    <th>Status</th>
+                    <th>Montant</th>
+                    <th>Statut</th>
                 </tr>
             </thead>
             <tbody>

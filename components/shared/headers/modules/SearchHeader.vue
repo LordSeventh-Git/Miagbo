@@ -6,8 +6,9 @@
     >
         <div class="ps-form__categories">
             <select class="form-control">
-                <option v-for="item in exampleCategories" :value="{ item }">
-                    {{ item }}
+                <option>Tous</option>
+                <option v-for="item of allCategory" :value="{ item }">
+                    {{ item.nom }}
                 </option>
             </select>
         </div>
@@ -16,7 +17,7 @@
                 v-model="searchText"
                 class="form-control"
                 type="text"
-                placeholder="I'm shopping for..."
+                placeholder="Je cherche..."
                 @keyup="handleSearchProduct"
             />
             <v-progress-circular
@@ -69,68 +70,17 @@ export default {
     },
     data() {
         return {
-            exampleCategories: [
-                'All',
-                'Babies & Moms',
-                'Books & Office',
-                'Cars & Motocycles',
-                'Clothing & Apparel',
-                ' Accessories',
-                'Bags',
-                'Kid’s Fashion',
-                'Mens',
-                'Shoes',
-                'Sunglasses',
-                'Womens',
-                'Computers & Technologies',
-                'Desktop PC',
-                'Laptop',
-                'Smartphones',
-                'Consumer Electrics',
-                'Air Conditioners',
-                'Accessories',
-                'Type Hanging Cell',
-                'Audios & Theaters',
-                'Headphone',
-                'Home Theater System',
-                'Speakers',
-                'Car Electronics',
-                'Audio & Video',
-                'Car Security',
-                'Radar Detector',
-                'Vehicle GPS',
-                'Office Electronics',
-                'Printers',
-                'Projectors',
-                'Scanners',
-                'Store & Business',
-                'Refrigerators',
-                'TV Televisions',
-                '4K Ultra HD TVs',
-                'LED TVs',
-                'OLED TVs',
-                'Washing Machines',
-                'Type Drying Clothes',
-                'Type Horizontal',
-                'Type Vertical',
-                'Garden & Kitchen',
-                'Cookware',
-                'Decoration',
-                'Furniture',
-                'Garden Tools',
-                'Home Improvement',
-                'Powers And Hand Tools',
-                'Utensil & Gadget',
-                'Health & Beauty',
-                'Equipments',
-                'Hair Care',
-                'Perfumer',
-                'Wine Cabinets'
-            ],
+            allCategory:[],
+            
             isSearching: false,
             isLoading: false,
             searchText: ''
         };
+    },
+
+    async fetch(){
+        this.allCategory = await fetch('http://51.89.97.33:5500/api/categories')
+            .then(res => res.json());
     },
     methods: {
         async handleSearchProduct(e) {
@@ -141,7 +91,7 @@ export default {
                 };
                 this.isLoading = true;
                 const result = await this.$store.dispatch(
-                    'product/getProductByKeyword',
+                    'product/getCategoryByKeyword',
                     query
                 );
                 if (result) {

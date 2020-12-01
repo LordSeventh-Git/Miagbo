@@ -22,8 +22,8 @@
                     <div class="ps-section--account-setting">
                         <div class="ps-section__header">
                             <h3>
-                                Invoice #500884010 -
-                                <strong>Successful delivery</strong>
+                                Facture #500884010 -
+                                <strong>Livraison réussie</strong>
                             </h3>
                         </div>
                         <div class="ps-section__content">
@@ -31,7 +31,7 @@
                                 <div class="col-md-4 col-12">
                                     <figure class="ps-block--invoice">
                                         <figcaption>
-                                            Address
+                                            Adresse
                                         </figcaption>
                                         <div class="ps-block__content">
                                             <strong>
@@ -49,12 +49,12 @@
                                 </div>
                                 <div class="col-md-4 col-12">
                                     <figure class="ps-block--invoice">
-                                        <figcaption>
-                                            Shipping Fee
+                                        <figcaption>                                            
+                                            Frais d'expédition
                                         </figcaption>
                                         <div class="ps-block__content">
                                             <p>
-                                                Shipping Fee: Free
+                                                Frais d'expédition : gratuit
                                             </p>
                                         </div>
                                     </figure>
@@ -62,11 +62,11 @@
                                 <div class="col-md-4 col-12">
                                     <figure class="ps-block--invoice">
                                         <figcaption>
-                                            Payment
+                                            Paiement
                                         </figcaption>
                                         <div class="ps-block__content">
                                             <p>
-                                                Payment Method: Visa
+                                                Méthode de paiment : Visa
                                             </p>
                                         </div>
                                     </figure>
@@ -77,7 +77,7 @@
                             </div>
                             <nuxt-link to="/account/invoices">
                                 <a class="ps-btn ps-btn--sm ">
-                                    Back to invoices
+                                    Retour aux factures
                                 </a>
                             </nuxt-link>
                         </div>
@@ -98,7 +98,7 @@ export default {
         return {
             accountLinks: [
                 {
-                    text: 'Account Information',
+                    text: 'Informations sur votre compte',
                     url: '/account/user-information',
                     icon: 'icon-user'
                 },
@@ -108,23 +108,23 @@ export default {
                     icon: 'icon-alarm-ringing'
                 },
                 {
-                    text: 'Invoices',
+                    text: 'Factures',
                     url: '/account/invoices',
                     icon: 'icon-papers',
                     active: true
                 },
                 {
-                    text: 'Address',
+                    text: 'Adresses',
                     url: '/account/addresses',
-                    icon: 'icon-map-marker'
+                    icon: 'icon-map-marker',
                 },
                 {
-                    text: 'Recent Viewed Product',
+                    text: 'Produits récemment consultés',
                     url: '/account/recent-viewed-product',
                     icon: 'icon-store'
                 },
                 {
-                    text: 'Wishlist',
+                    text: 'Liste de souhaits',
                     url: '/account/wishlist',
                     icon: 'icon-heart'
                 }

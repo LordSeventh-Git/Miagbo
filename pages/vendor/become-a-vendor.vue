@@ -52,11 +52,11 @@ export default {
         return {
             breadCrumb: [
                 {
-                    text: 'Home',
+                    text: 'Accueil',
                     url: '/'
                 },
                 {
-                    text: 'Become a vendor'
+                    text: 'Devenir un vendeur'
                 }
             ]
         };

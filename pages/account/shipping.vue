@@ -24,7 +24,7 @@ import Shipping from '~/components/partials/account/Shipping';
 import HeaderMobile from '~/components/shared/mobile/HeaderMobile';
 
 export default {
-    middleware: 'authentication',
+    /*middleware: 'authentication',*/
     components: {
         HeaderMobile,
         Shipping,

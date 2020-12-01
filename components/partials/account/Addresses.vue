@@ -24,18 +24,28 @@
                             <div class="row">
                                 <div class="col-md-6 col-12">
                                     <figure class="ps-block--address">
-                                        <figcaption>
+                                        <!--<figcaption>
                                             Billing address
+                                        </figcaption>-->
+                                        <figcaption>
+                                            Informations de paiement
                                         </figcaption>
                                         <div class="ps-block__content">
                                             <p>
-                                                You Have Not Set Up This Type Of
-                                                Address Yet.
+                                                Vous n'avez pas encore fourni vos Informations 
+                                                de paiement.
                                             </p>
                                             <nuxt-link
                                                 to="/account/edit-address"
                                             >
-                                                <a>Edit</a>
+                                            <button 
+                                                style="padding: 10px; margin-bottom: 0;"
+                                                type="submit"
+                                                class="ps-btn ps-btn--fullwidth"
+                                                @click.prevent="handleSubmit"
+                                            >
+                                                Modifier
+                                            </button>
                                             </nuxt-link>
                                         </div>
                                     </figure>
@@ -43,17 +53,24 @@
                                 <div class="col-md-6 col-12">
                                     <figure class="ps-block--address">
                                         <figcaption>
-                                            Shipping address
+                                            Adresse de livraison
                                         </figcaption>
                                         <div class="ps-block__content">
                                             <p>
-                                                You Have Not Set Up This Type Of
-                                                Address Yet.
+                                                Vous n'avez pas encore fourni votre adresse de livraison.
                                             </p>
                                             <nuxt-link
                                                 to="/account/edit-address"
                                             >
-                                                <a>Edit</a>
+                                                <!--<a>Edit</a>-->
+                                            <button
+                                                style="padding: 10px; margin-bottom: 0;"
+                                                type="submit"
+                                                class="ps-btn ps-btn--fullwidth"
+                                                @click.prevent="handleSubmit"
+                                            >
+                                                Modifier
+                                            </button>
                                             </nuxt-link>
                                         </div>
                                     </figure>
@@ -76,7 +93,7 @@ export default {
         return {
             accountLinks: [
                 {
-                    text: 'Account Information',
+                    text: 'Informations sur votre compte',
                     url: '/account/user-information',
                     icon: 'icon-user'
                 },
@@ -86,23 +103,23 @@ export default {
                     icon: 'icon-alarm-ringing'
                 },
                 {
-                    text: 'Invoices',
+                    text: 'Factures',
                     url: '/account/invoices',
                     icon: 'icon-papers'
                 },
                 {
-                    text: 'Address',
+                    text: 'Adresses',
                     url: '/account/addresses',
                     icon: 'icon-map-marker',
                     active: true
                 },
                 {
-                    text: 'Recent Viewed Product',
+                    text: 'Produits récemment consultés',
                     url: '/account/recent-viewed-product',
                     icon: 'icon-store'
                 },
                 {
-                    text: 'Wishlist',
+                    text: 'Liste de souhaits',
                     url: '/account/wishlist',
                     icon: 'icon-heart'
                 }

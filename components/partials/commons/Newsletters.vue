@@ -14,12 +14,12 @@
                         </div>
                     </div>
                     <div class="col-lg-7 ">
-                        <div class="ps-form__right">
+                        <div class="ps-form__right" style="margin-top: 10px;">
                             <div class="form-group--nest">
                                 <input
                                     class="form-control"
                                     type="email"
-                                    placeholder="Email address"
+                                    placeholder="E-mail"
                                 />
                                 <button class="ps-btn">
                                     {{ $t('common.subscribe') }}

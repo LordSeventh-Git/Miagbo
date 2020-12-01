@@ -64,11 +64,11 @@ export default {
         return {
             breadCrumb: [
                 {
-                    text: 'Home',
+                    text: 'Accueil',
                     url: '/'
                 },
                 {
-                    text: 'Search Result'
+                    text: 'Résultat de la recherche'
                 }
             ]
         };

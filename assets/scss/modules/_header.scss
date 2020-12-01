@@ -1,10 +1,10 @@
 @font-face {
-    font-family: "Ghoust Solid";
-    src: url("/static/fonts/Ghoust_Solid.otf") format("otf");
+    font-family: 'Ghoust Solid';
+    src: url('/static/fonts/Ghoust_Solid.otf') format('otf');
 }
 
 .navigation {
-    background-color: $color-1st;
+    //background-color: $color-1st;
 
     > .ps-container,
     > .container {
@@ -78,7 +78,7 @@
 
         > i {
             font-size: 30px;
-            line-height: 42px;            
+            line-height: 42px;
         }
 
         span {
@@ -93,7 +93,7 @@
             width: 20px;
             height: 20px;
             color: #ffffff;
-            background-color:red;
+            background-color: rgb(194, 0, 9);
             border-radius: 50%;
 
             i {
@@ -132,8 +132,8 @@
         font-style: italic;
         font-size: 2em;
         //font-family: "Ghoust Solid";
-        
-        &:hover{
+
+        &:hover {
             color: yellow;
         }
 
@@ -141,15 +141,14 @@
             display: none;
         }
 
-        img{
-            transition: .5s;
+        img {
+            transition: 0.5s;
 
-            &:hover{
-                box-shadow: 0 2px 5px rgba(0,0,0,0.3);
+            &:hover {
+                box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
                 border-radius: 50px;
             }
         }
-
     }
 
     .header__center {
@@ -157,11 +156,12 @@
     }
 
     .header__right {
-        max-width: 280px;
+        max-width: 250px;
     }
 
     .header__top {
-        padding: 25px 0;
+        padding-top: 24px;
+        padding-bottom: 0px;
         background-color: $color-1st;
         border-bottom: 1px solid rgba(0, 0, 0, 0.15);
 
@@ -195,18 +195,13 @@
             width: 100%;
             z-index: 1000;
             border-bottom: none;
-            padding: 10px 0;
+            padding-top: 24px;
+            padding-bottom: 0px;
         }
 
         .header__left {
             .ps-logo {
-                display: none;
-
-            }
-
-            .menu--product-categories {
                 display: block;
-                background-color: transparent;
             }
         }
     }
@@ -542,7 +537,7 @@
 
     .header__extra {
         span {
-            background-color: #000;
+            background-color: red;
 
             i {
                 color: #ffffff;
@@ -555,7 +550,7 @@
         display: flex;
         flex-flow: row nowrap;
         justify-content: space-between;
-        padding: 10px 20px;
+        padding-left: 10px;
         border-bottom: none;
         > * {
             flex-basis: 100%;
@@ -567,6 +562,8 @@
         }
         .navigation__right {
             text-align: right;
+            margin-top: 12px;
+            padding-right: 10px;
             .header__extra {
                 margin-right: 10px;
             }
